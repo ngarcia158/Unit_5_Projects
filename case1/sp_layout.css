@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author:Nicholas Garcia
+   Date:9/24/19   
+   
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+html{
+   height: 100%;
+}
+/*makes the height of the page 100%of window*/
+body{
+   width: 95%;
+   min-width: 640px;
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+   min-height: 100%;
+}
+/*makes the body 95% of window between 640 and 960 px. Horizontally centers and max minimum height 100%*/
+header, ul, nav, li, a{
+   box-sizing: border-box;
+}
+/*makes the sizing to these elements border-box*/
+
+/* Row Styles */
+.row::after{
+   clear:both;
+   content: "";
+   display: table;
+}
+/*No content collapse*/
+
+
+
+
+/* Page Header Styles */
+body header img{
+   display: block;
+   width: 70%;
+   float: left;
+}
+/*makes all images in headers in the body display as block and is 70% of the header space. Floats left*/
+body header>nav{
+   float: left;
+   padding-left: 2%;
+   padding-right: 2%;
+   width: 30%;
+}
+/*Makes all body headers direct navs float left, adds padding of 2% on left and right and makes a width of 30% of the header*/
+header nav a{
+   display: block;
+   width: 100%;
+}
+/*makes all hypertext likes in the header nav siplay as block and amkes the width 100%*/
+
+
+
+/* Horizontal Navigation List Styles */
+nav.horizontal li{
+   display: block;
+   width: 12.5%;
+   float: left;
+}
+/*makes all horizontal list items display as block, a width of 12.5%, and float left*/
+
+
+/* Topics Styles */
+ul#topics li{
+   display: block;
+   width: 20%;
+   float: left;
+   margin-left: 0%;
+   margin-right: 1.5%;
+}
+/*Makes all ul with id topics that are listitems display as block, width of 20% float left. Makes margin left 0% and margin right 1.5%*/
+#topics:first-of-type{
+   margin-left: 7.75%;
+}
+#topics:last-of-type{
+   margin-right: 7.75%
+}
+li img{
+   display: block;
+   width: 50%;
+   align-content: center;
+}
+/*Makes the first of the id topics margin left 7.75% and the last of type marig right 7.75%. Also makes all images in list items 
+display as block makes t 50% in width and aligns in the center*/
+
+
+/* HR Styles */
+hr{
+   width: 50%;
+}
+/*all hr a width of 50%*/
+
+
+/* Customer Comment Styles */
+ul#comments{
+   width: 75%;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: auto;
+   margin-right: auto;
+}
+/*ul with id comments a width of 75% and makes margins left and right auto aligning it in the middle and makes top and bttom margin 40p*/
+#comments li{
+   display: block;
+   width: 50%;
+   float: left;
+   margin-bottom: 30px;
+}
+/*makes id comments that are list item display as block, amkes a width of 50%, float left, and makes the bottom margin 30px*/
+#comments img{
+   display: block;
+   width: 20%;
+   float: left;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+/*makes all images in the id comments display as block, makes if 20% width, floats left, and left and right margin shave 5%*/
+#comments li p{
+   float: left;
+   width: 70%;
+}
+/*all comments ids with list item paragraphs float left and 70% width*/
+/* Footer Styles */
+footer{
+   clear: both;
+}
+/*makes sure the footer clears all pictures and text to display.*/
+
