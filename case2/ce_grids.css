@@ -17,23 +17,27 @@
 div.row{
    width: 100%;
    clear: both;
-   
 }
-.row{
-   float: auto;
+div.row::after{
+   clear: both;
+   content: "";
+   display: table;
 }
-div.column{
+div[class^="column"]{
    float: left;
 }
-div.cloumn100{
+div.column100{
    width: 100%;
 } 
-div.cloumn50{
+div.column50{
    width: 50%;
 } 
-div.cloumn33{
+div.column33{
    width: 33%;
 } 
+div.column25{
+   width: 25%;
+}
 div.column67{
    width: 67%;
 } 
@@ -43,13 +47,13 @@ div.column75{
 div.column20{
    width: 20%;
 } 
-div.cloumn40{
+div.column40{
    width: 40%;
 } 
-div.cloumn60{
+div.column60{
    width: 60%;
 } 
-div.cloumn80{
+div.column80{
    width: 80%;
 }
 
@@ -59,6 +63,6 @@ div.cloumn80{
 
 
 /* Grid Spacing Styles */
-div.container, div.row, div.column, div.cell, .cell div a{
+div.container, div.row, div[class^="column"], div[class^="cell"], div.cell, div a{
    box-sizing: border-box;
 } 
