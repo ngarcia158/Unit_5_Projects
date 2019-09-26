@@ -18,14 +18,17 @@ div.row{
    width: 100%;
    clear: both;
 }
-div.row::after{
+/*makes all div that are rows a width of 100% of parent element and clears both sides of the margin*/
+div.row{
    clear: both;
    content: "";
    display: table;
 }
+/*makes so there are no content collapses in the rows*/
 div[class^="column"]{
    float: left;
 }
+/*makes all comulmns float left*/
 div.column100{
    width: 100%;
 } 
@@ -56,13 +59,14 @@ div.column60{
 div.column80{
    width: 80%;
 }
-
+/*sets the width sizes of all boxes*/
 /* Grid Columns Styles */
 
 
 
 
 /* Grid Spacing Styles */
-div.container, div.row, div[class^="column"], div[class^="cell"], div.cell, div a{
+div.container, div.row, div[class^="column"], div.cell, div a{
    box-sizing: border-box;
 } 
+/*Makes so div elements with the class container, cell, or row its sizing is border-box. Also sets all div a to border box with any columns*/
