@@ -19,6 +19,7 @@ body{
    max-width: 960px;
    margin-left: auto;
    margin-right: auto;
+   position: block;
 }
 footer{
    width: 100%;
@@ -52,6 +53,13 @@ a{
    text-decoration: none;
    color: black;
 }
+
 a:hover, a:active{
    color: red;
+}
+a.headline:hover + p.story, a.headline:active + p.story{
+   display: block;
+}
+p.story{
+   display: none; 
 }
